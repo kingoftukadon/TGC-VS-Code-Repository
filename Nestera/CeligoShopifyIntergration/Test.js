@@ -9,5 +9,6 @@ function calculateTotal(price, discount) {
 }
 
 console.log(message);
+console.log('added console message!');
 console.log(`Discount: ${discountPercent}%`);
 console.log(`Total: PHP ${calculateTotal(originalPrice, discountPercent).toFixed(2)}`);
