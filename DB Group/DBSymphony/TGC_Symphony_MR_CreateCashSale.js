@@ -25,6 +25,12 @@ define(['N/log'], (log) => {
     };
 
     const reduce = (context) => {
+
+        log.debug({
+            title: 'Reducing Category',
+            details: { category: context.key, quantities: context.values }
+        });
+
         const totalQuantity = context.values.reduce(
             (total, quantity) => total + Number(quantity),
             0
