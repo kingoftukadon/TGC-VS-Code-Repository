@@ -13,11 +13,6 @@ define(['N/log'], (log) => {
     const map = (context) => {
         const item = JSON.parse(context.value);
 
-        log.debug({
-            title: 'Processing Item',
-            details: item
-        });
-
         context.write({
             key: item.category,
             value: item.quantity
